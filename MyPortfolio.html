@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> My Portfolio </title>
+        <link rel="stylesheet" href="Untitled-2.css">
+        <script src="https://kit.fontawesome.com/5759d25e10.js" crossorigin="anonymous"></script>
+        </head>
+    <body> 
+    <div id="header">
+        <div class="container";>
+            <nav>
+            <img src="images/sheen2.png" width="10%">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Bachelor of Science in Information System</p>
+            <h1> Hi, I'm <span>Shennel</span><br>Kaye P. Sefulan</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello Everyone! 
+                        I am Shennel Kaye P. Sefulan, 
+                        18 years old, my birthday is February 22, 2005 and I live 
+                        in Trece Martires City, Cavite. My favorite color was green
+                        because it reminds me of the nature and last I believe that 
+                        there was a God, the creator of this world.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Awards/Achievements')">Awards/Achievements</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>2011-2012</span><br>Sta.Cristina Elementary School</li>
+                            <li><span>2012-2013</span><br>Hugo Perez Elementary School</li>
+                            <li><span>2013-2017</span><br>Palawit Elementary School</li>
+                            <li><span>2017-2021</span><br>Eugenio Cabezas National HighSchool</li>
+                            <li><span>2021-2023</span><br>Philippine Christian University</li>
+                            <li><span>2023-Current</span><br>Kolehiyo ng Lungsod ng Dasmarinas</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Awards/Achievements">
+                        <ul>
+                            <li><span>Grade 4</span><br>Top 10</li>
+                            <li><span>Grade 7</span><br>Top 4</li>
+                            <li><span>Grade 11</span><br>With Honor</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------hobbies----------- --> 
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title">My Hobbies</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/violin.jpg" width="200%" height="150%">
+                    <div class="layer">
+                        <h3> Playing Violin </h3>
+                    </div>
+                    </div>
+                <div class="work">
+                    <img src="images/badminton.jpeg" width="200%" height="100%">
+                    <div class="layer">
+                        <h3> Playing Badminton </h3>
+                    </div>
+                    </div>
+                <div class="work">
+                    <img src="images/manhwa2.webp" width="100%" height="100%">
+                    <div class="layer">
+                        <h3> Reading Manhwa </h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cooking.jpg" width="80%" height="100%">
+                    <div class="layer">
+                        <h3> Cooking </h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/anime.jpg" width="80%" height="100%">
+                    <div class="layer">
+                        <h3> Watching Anime </h3>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/eating.jpg" width="80%" height="100%">
+                    <div class="layer">
+                        <h3> Eating </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sefulan.shennelkayep.kld@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09293299846</p>
+                <div class="social-icons">
+                                <a href="https://facebook.com/"><i class="fa-brands fa-facebook fa-xs"></i></a></i>
+                                <a href=""><i class="fa-brands fa-twitter fa-xs"></i></a></i>
+                                <a href=""><i class="fa-brands fa-instagram fa-xs"></i></a></i>
+                           </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Name" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>       
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+    </script>
+    </body>
+    </html>
